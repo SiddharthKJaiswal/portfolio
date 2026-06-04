@@ -17,10 +17,11 @@ function GetMediaHTML(item)
     <img
         class="project-image"
         src="${
-        item.image ||
-        'assets/images/under-development.webp'
-    }"
-        alt="${item.title}">
+            item.image ||
+            'assets/images/under-development.webp'
+        }"
+        alt="${item.title}"
+        onerror="this.src='assets/images/under-development.webp'">
     `;
 }
 
@@ -47,7 +48,7 @@ projects.forEach(project =>
         ${project.description}
     </p>
 
-    ${GetMediaHTML(project)},
+    ${GetMediaHTML(project)}
 
     <h4 style="margin-top:20px;">
         Key Contributions
@@ -109,7 +110,7 @@ leisure.forEach(leisure =>
         ${leisure.description}
     </p>
 
-    ${GetMediaHTML(leisure)},
+    ${GetMediaHTML(leisure)}
 
     <h4 style="margin-top:20px;">
         Key Contributions

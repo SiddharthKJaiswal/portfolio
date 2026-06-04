@@ -9,7 +9,7 @@ const leisure = [
 
     video:"",
     
-    image:"",
+    image:"assets/images/personal1.webp",
 
     website:"#",
 
@@ -35,7 +35,7 @@ const leisure = [
 
     video:"",
 
-    image:"",
+    image:"assets/images/personal2.webp",
     
     website:"#",
 
