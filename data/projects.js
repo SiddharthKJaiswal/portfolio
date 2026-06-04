@@ -7,9 +7,6 @@ const projects = [
 
     role: "Lead Gameplay Engineer",
 
-    video:
-    "https://www.youtube.com/embed/VIDEO_ID",
-
     website: "#",
 
     description:
@@ -51,7 +48,7 @@ const projects = [
     role: "Gameplay Programmer",
 
     video:
-    "https://www.youtube.com/embed/VIDEO_ID",
+    "https://www.youtube.com/embed/Xstz5Y3AhlE",
 
     website:
     "https://store.epicgames.com/en-US/p/openseason-75e993",
@@ -84,47 +81,6 @@ const projects = [
 
     ]
 },
-
-{
-    id: "platform",
-
-    title: "Multiplayer Interactive Platform",
-
-    role: "Gameplay Programmer",
-
-    video:
-    "https://www.youtube.com/embed/VIDEO_ID",
-
-    website:"#",
-
-    description:
-    "Shared multiplayer experience platform supporting progression, rewards, persistence, analytics, and backend integrations.",
-
-    contributions:[
-
-        "Progression Systems",
-        "Rewards Systems",
-        "Analytics Systems",
-        "Cloud Persistence",
-        "Encrypted Save Systems",
-        "Server Validation",
-        "Gameplay State Management",
-        "Modular Gameplay Architecture"
-
-    ],
-
-    technologies:[
-
-        "Unreal Engine",
-        "C++",
-        "REST APIs",
-        "AES Encryption",
-        "Multiplayer",
-        "Backend Integrations"
-
-    ]
-},
-
 {
     id:"runner",
 
@@ -133,7 +89,7 @@ const projects = [
     role:"Gameplay Programmer",
 
     video:
-    "https://www.youtube.com/embed/VIDEO_ID",
+    "https://www.youtube.com/embed/jDMcSKnRMe0",
 
     website:
     "https://play.google.com/store/apps/details?id=com.vulcan.runner",

@@ -22,8 +22,11 @@ projects.forEach(project =>
     </p>
 
     <iframe
-    src="${project.video}"
-    allowfullscreen>
+        src="${project.video}"
+        title="${project.title}"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
     </iframe>
 
     <h4 style="margin-top:20px;">
@@ -87,8 +90,11 @@ leisure.forEach(leisure =>
     </p>
 
     <iframe
-    src="${leisure.video}"
-    allowfullscreen>
+        src="${project.video}"
+        title="${project.title}"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
     </iframe>
 
     <h4 style="margin-top:20px;">
