@@ -63,6 +63,71 @@ projects.forEach(project =>
     projectsContainer.appendChild(card);
 });
 
+const leisureContainer =
+document.getElementById("leisure-container");
+
+leisure.forEach(leisure =>
+{
+    const card =
+    document.createElement("div");
+
+    card.className =
+    "leisure-card";
+
+    card.innerHTML =
+    `
+    <h3>${leisure.title}</h3>
+
+    <p>
+        <strong>${leisure.role}</strong>
+    </p>
+
+    <p style="margin-top:15px;">
+        ${leisure.description}
+    </p>
+
+    <iframe
+    src="${leisure.video}"
+    allowfullscreen>
+    </iframe>
+
+    <h4 style="margin-top:20px;">
+        Key Contributions
+    </h4>
+
+    <ul>
+        ${leisure.contributions
+            .map(item =>
+            `<li>${item}</li>`)
+            .join("")}
+    </ul>
+
+    <div class="tags">
+        ${leisure.technologies
+            .map(tag =>
+            `<span class="tag">${tag}</span>`)
+            .join("")}
+    </div>
+
+    ${
+        leisure.website !== "#"
+        ?
+        `<p style="margin-top:20px;">
+            <a
+            class="button"
+            target="_blank"
+            href="${leisure.website}">
+                External Link
+            </a>
+        </p>`
+        :
+        ""
+    }
+    `;
+
+    leisureContainer.appendChild(card);
+});
+
 const experienceContainer =
 document.getElementById("experience-container");
 
