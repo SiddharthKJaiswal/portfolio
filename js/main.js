@@ -1,3 +1,29 @@
+function GetMediaHTML(item)
+{
+    if(item.video)
+    {
+        return `
+        <iframe
+            src="${item.video}"
+            title="${item.title}"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+        `;
+    }
+
+    return `
+    <img
+        class="project-image"
+        src="${
+        item.image ||
+        'assets/images/under-development.webp'
+    }"
+        alt="${item.title}">
+    `;
+}
+
 const projectsContainer =
 document.getElementById("projects-container");
 
@@ -21,13 +47,7 @@ projects.forEach(project =>
         ${project.description}
     </p>
 
-    <iframe
-        src="${project.video}"
-        title="${project.title}"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
+    ${GetMediaHTML(project)}
 
     <h4 style="margin-top:20px;">
         Key Contributions
@@ -89,13 +109,7 @@ leisure.forEach(leisure =>
         ${leisure.description}
     </p>
 
-    <iframe
-        src="${project.video}"
-        title="${project.title}"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
+    ${GetMediaHTML(leisure)}
 
     <h4 style="margin-top:20px;">
         Key Contributions

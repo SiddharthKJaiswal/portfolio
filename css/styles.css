@@ -313,3 +313,17 @@ ul{
         height:250px;
     }
 }
+.project-image,
+.leisure-image {
+
+    width:100%;
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin-top:20px;
+
+    display:block;
+}

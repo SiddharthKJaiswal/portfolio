@@ -7,8 +7,9 @@ const leisure = [
 
     role:"Personal Project",
 
-    video:
-    "https://www.youtube.com/embed/VIDEO_ID",
+    video: "",
+    
+    image: "",
 
     website:"#",
 
@@ -32,9 +33,10 @@ const leisure = [
 
     role:"Personal Project",
 
-    video:
-    "https://www.youtube.com/embed/VIDEO_ID",
+    video: "",
 
+    image: "",
+    
     website:"#",
 
     description:

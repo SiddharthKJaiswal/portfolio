@@ -7,6 +7,9 @@ const projects = [
 
     role: "Lead Gameplay Engineer",
 
+    video: "",
+    image: "assets/images/OpenSeasonlogo.webp",
+
     website: "#",
 
     description:
@@ -47,8 +50,8 @@ const projects = [
 
     role: "Gameplay Programmer",
 
-    video:
-    "https://www.youtube.com/embed/Xstz5Y3AhlE",
+    video: "https://www.youtube.com/embed/Xstz5Y3AhlE",
+    image: "",
 
     website:
     "https://store.epicgames.com/en-US/p/openseason-75e993",
@@ -90,6 +93,7 @@ const projects = [
 
     video:
     "https://www.youtube.com/embed/jDMcSKnRMe0",
+    image: "",
 
     website:
     "https://play.google.com/store/apps/details?id=com.vulcan.runner",
