@@ -7,9 +7,9 @@ const leisure = [
 
     role:"Personal Project",
 
-    video: "",
+    video:"",
     
-    image: "",
+    image:"",
 
     website:"#",
 
@@ -33,9 +33,9 @@ const leisure = [
 
     role:"Personal Project",
 
-    video: "",
+    video:"",
 
-    image: "",
+    image:"",
     
     website:"#",
 
