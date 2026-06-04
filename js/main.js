@@ -47,7 +47,7 @@ projects.forEach(project =>
         ${project.description}
     </p>
 
-    ${GetMediaHTML(project)}
+    ${GetMediaHTML(project)},
 
     <h4 style="margin-top:20px;">
         Key Contributions
@@ -109,7 +109,7 @@ leisure.forEach(leisure =>
         ${leisure.description}
     </p>
 
-    ${GetMediaHTML(leisure)}
+    ${GetMediaHTML(leisure)},
 
     <h4 style="margin-top:20px;">
         Key Contributions
