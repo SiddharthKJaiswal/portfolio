@@ -1,49 +1,24 @@
 const leisure = [
 
 {
-    id:"personal1",
+    id:"cricket",
 
-    title:"Modular Weapon Framework",
-
-    role:"Personal Project",
-
-    video:"",
-    
-    image:"assets/images/personal1.webp",
-
-    website:"#",
-
-    description:
-    "Coming soon.",
-
-    contributions:[
-        "Placeholder"
-    ],
-
-    technologies:[
-        "Unreal Engine",
-        "C++"
-    ]
-},
-
-{
-    id:"personal2",
-
-    title:"Inventory Framework",
+    title:"Cricket System",
 
     role:"Personal Project",
 
-    video:"",
-
-    image:"assets/images/personal2.webp",
+    video:"https://www.youtube.com/embed/LaHUjrASFdA",
     
-    website:"#",
+    image:"assets/images/cricket.webp",
+
+    website:"https://github.com/SiddharthKJaiswal/Public_Cricket",
 
     description:
-    "Coming soon.",
+    "A simple Unreal Engine interview task. Developed in Unreal Engine 5 using C++ and Blueprints.",
 
     contributions:[
-        "Placeholder"
+        "Physics Interactions",
+		"Gameplay States"
     ],
 
     technologies:[
