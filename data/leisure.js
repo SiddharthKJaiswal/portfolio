@@ -7,11 +7,20 @@ const leisure = [
 
     role:"Personal Project",
 
-    video:"https://www.youtube.com/embed/LaHUjrASFdA",
+	links:
+	[
+		{
+			label: "Github",
+			url: "https://github.com/SiddharthKJaiswal/Public_Cricket"
+		},
+	
+		{
+			label: "Gameplay",
+			url: "https://www.youtube.com/watch?v=LaHUjrASFdA"
+		}
+	],
     
-    image:"assets/images/cricket.webp",
-
-    website:"https://github.com/SiddharthKJaiswal/Public_Cricket",
+    image:"assets/images/cricket.png",
 
     description:
     "A simple Unreal Engine interview task. Developed in Unreal Engine 5 using C++ and Blueprints.",

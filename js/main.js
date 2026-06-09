@@ -18,10 +18,10 @@ function GetMediaHTML(item)
         class="project-image"
         src="${
             item.image ||
-            'assets/images/under-development.webp'
+            'assets/images/under-development.png'
         }"
         alt="${item.title}"
-        onerror="this.src='assets/images/under-development.webp'">
+        onerror="this.src='assets/images/under-development.png'">
     `;
 }
 
@@ -36,8 +36,42 @@ projects.forEach(project =>
     card.className =
     "project-card";
 
-    card.innerHTML =
-    `
+    card.innerHTML = `
+
+<div class="project-media">
+    ${GetMediaHTML(project)}
+	<div class="tags">
+        ${project.technologies
+            .map(tag =>
+                `<span class="tag">${tag}</span>`
+            )
+            .join("")}
+    </div>
+
+    <div class="project-links">
+
+    ${
+        project.links
+        ?
+        project.links.map(link =>
+
+            `<a
+                class="button secondary"
+                href="${link.url}"
+                target="_blank">
+                ${link.label}
+            </a>`
+
+        ).join("")
+        :
+        ""
+    }
+
+	</div>
+</div>
+
+<div class="project-content">
+
     <h3>${project.title}</h3>
 
     <p>
@@ -48,41 +82,17 @@ projects.forEach(project =>
         ${project.description}
     </p>
 
-    ${GetMediaHTML(project)}
-
     <h4 style="margin-top:20px;">
-        Key Contributions
+        My Contributions
     </h4>
 
     <ul>
         ${project.contributions
-            .map(item =>
-            `<li>${item}</li>`)
+            .map(item => `<li>${item}</li>`)
             .join("")}
     </ul>
-
-    <div class="tags">
-        ${project.technologies
-            .map(tag =>
-            `<span class="tag">${tag}</span>`)
-            .join("")}
-    </div>
-
-    ${
-        project.website !== "#"
-        ?
-        `<p style="margin-top:20px;">
-            <a
-            class="button"
-            target="_blank"
-            href="${project.website}">
-                External Link
-            </a>
-        </p>`
-        :
-        ""
-    }
-    `;
+</div>
+`;
 
     projectsContainer.appendChild(card);
 });
@@ -98,8 +108,42 @@ leisure.forEach(leisure =>
     card.className =
     "leisure-card";
 
-    card.innerHTML =
-    `
+    card.innerHTML = `
+
+<div class="leisure-media">
+    ${GetMediaHTML(leisure)}
+	<div class="tags">
+        ${leisure.technologies
+            .map(tag =>
+                `<span class="tag">${tag}</span>`
+            )
+            .join("")}
+    </div>
+
+    <div class="leisure-links">
+
+    ${
+        leisure.links
+        ?
+        leisure.links.map(link =>
+
+            `<a
+                class="button secondary"
+                href="${link.url}"
+                target="_blank">
+                ${link.label}
+            </a>`
+
+        ).join("")
+        :
+        ""
+    }
+
+	</div>
+</div>
+
+<div class="leisure-content">
+
     <h3>${leisure.title}</h3>
 
     <p>
@@ -110,41 +154,18 @@ leisure.forEach(leisure =>
         ${leisure.description}
     </p>
 
-    ${GetMediaHTML(leisure)}
-
     <h4 style="margin-top:20px;">
-        Key Contributions
+        My Contributions
     </h4>
 
     <ul>
         ${leisure.contributions
-            .map(item =>
-            `<li>${item}</li>`)
+            .map(item => `<li>${item}</li>`)
             .join("")}
     </ul>
 
-    <div class="tags">
-        ${leisure.technologies
-            .map(tag =>
-            `<span class="tag">${tag}</span>`)
-            .join("")}
-    </div>
-
-    ${
-        leisure.website !== "#"
-        ?
-        `<p style="margin-top:20px;">
-            <a
-            class="button"
-            target="_blank"
-            href="${leisure.website}">
-                External Link
-            </a>
-        </p>`
-        :
-        ""
-    }
-    `;
+</div>
+`;
 
     leisureContainer.appendChild(card);
 });

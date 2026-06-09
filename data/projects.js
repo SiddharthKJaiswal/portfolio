@@ -7,10 +7,10 @@ const projects = [
 
     role: "Lead Gameplay Engineer",
 
-    video:"",
+    links:
+	[
+	],
     image:"assets/images/football.webp",
-
-    website: "#",
 
     description:
     "Production-approved Unreal Engine 5 virtual sports title built from the ground up. Designed to support backend-driven match outcomes, scalable content pipelines, and rapid gameplay sequence authoring.",
@@ -46,15 +46,23 @@ const projects = [
 {
     id: "openseason",
 
-    title: "OpenSeason",
+    title: "Stylized Battle Royale",
 
     role: "Gameplay Programmer",
 
-    video:"https://www.youtube.com/embed/Xstz5Y3AhlE",
-    image:"assets/images/openseason.webp",
-
-    website:
-    "https://store.epicgames.com/en-US/p/openseason-75e993",
+	links:
+	[
+		{
+			label: "Epic Store",
+			url: "https://store.epicgames.com/en-US/p/openseason-75e993"
+		},
+	
+		{
+			label: "Trailer",
+			url: "https://www.youtube.com/watch?v=Xstz5Y3AhlE"
+		}
+	],
+    image:"assets/images/openseason.png",
 
     description:
     "Multiplayer Battle Royale built using Unreal Engine and Epic Online Services.",
@@ -91,11 +99,19 @@ const projects = [
 
     role:"Gameplay Programmer",
 
-    video:"https://www.youtube.com/embed/jDMcSKnRMe0",
+links:
+	[
+		{
+			label: "Play Store",
+			url: "https://play.google.com/store/apps/details?id=com.vulcan.runner"
+		},
+	
+		{
+			label: "Gameplay",
+			url: "https://www.youtube.com/watch?v=jDMcSKnRMe0"
+		}
+	],
     image:"assets/images/runner.webp",
-
-    website:
-    "https://play.google.com/store/apps/details?id=com.vulcan.runner",
 
     description:
     "Mobile runner title featuring backend progression systems and achievement integrations.",
