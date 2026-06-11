@@ -15,9 +15,9 @@ const experience = [
         "Built Football Virtual Sports prototype from scratch",
         "Created Data-Driven Gameplay Sequencing Framework",
         "Owned gameplay, camera, UI and orchestration systems",
-        "Reduced content creation timelines dramatically",
+        "Reduced gameplay sequence creation from 7–9 days to ~2 days",
         "Extended framework from Tennis Virtual Sports Prototype",
-        "Mentored developers and performed code reviews"
+        "Enabled 8 animators to create 150+ gameplay sequences"
 
     ]
 },

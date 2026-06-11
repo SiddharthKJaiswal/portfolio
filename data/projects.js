@@ -13,7 +13,7 @@ const projects = [
     image:"assets/images/football.webp",
 
     description:
-    "Production-approved Unreal Engine 5 virtual sports title built from the ground up. Designed to support backend-driven match outcomes, scalable content pipelines, and rapid gameplay sequence authoring.",
+    "Developed the initial Unreal Engine 5 prototype that secured production approval. Designed and implemented a data-driven gameplay authoring framework that enabled non-programmers to create gameplay simulations, reducing sequence creation time from 7–9 days to approximately 2 days and supporting a production pipeline of 150+ gameplay sequences.",
 
     contributions: [
 
@@ -25,9 +25,10 @@ const projects = [
         "Developed UI systems",
         "Created Gameplay Sequencing Framework",
         "Reduced sequence creation time from 7-9 days to ~2 days",
-        "Enabled animator-driven content creation",
-        "Mentored developers"
-
+        "Enabled 8 animators to create 150+ gameplay sequences",
+		"Scaled from solo prototype to multi-disciplinary production team",
+		"Backend-driven gameplay execution",
+		"Gameplay authoring tools for non-programmers",
     ],
 
     technologies: [
@@ -40,6 +41,34 @@ const projects = [
         "Data Driven Systems",
         "Animation Systems"
 
+    ]
+},
+
+{
+    id:"mrplatform",
+
+    title:"Multiplayer Mixed Reality Simulation Platform",
+
+    role:"Gameplay Programmer / Technical Lead",
+
+    description:
+    "Multiplayer educational simulation platform supporting progression, rewards, analytics, cloud persistence, and secure progression systems.",
+	image:"assets/images/NDA.png",
+    contributions:[
+        "Technical lead for two junior developers",
+        "Modular progression architecture",
+        "Rewards and analytics systems",
+        "Encrypted cloud persistence",
+        "Server-authoritative progression validation",
+        "Workflow automation tools"
+    ],
+
+    technologies:[
+        "Unreal Engine 5",
+        "C++",
+        "Multiplayer",
+        "REST APIs",
+        "AES Encryption"
     ]
 },
 
@@ -58,25 +87,27 @@ const projects = [
 		},
 	
 		{
-			label: "Trailer",
-			url: "https://www.youtube.com/watch?v=Xstz5Y3AhlE"
+			label: "Gameplay",
+			url: "https://www.youtube.com/watch?v=nDpVILlL3XQ"
 		}
 	],
     image:"assets/images/openseason.png",
 
     description:
-    "Multiplayer Battle Royale built using Unreal Engine and Epic Online Services.",
+    "Multiplayer Battle Royale developed using Unreal Engine, EOS, GAS, and replication systems. Contributed core gameplay features including character selection, traversal mechanics, storm gameplay, weapons, abilities, and multiplayer gameplay systems.",
 
     contributions: [
-
-        "Traversal Systems",
-        "Crawl Movement",
-        "Healing Systems",
+		"Started as sole gameplay programmer on project",
+		"Crawl Movement",
+		"League of Legends-style character selection system",
+		"Damaging Storm System",
+		"Minimap System",
+		"Weapons and Abilities",
+		"Gameplay Modes",
+		"Healing Systems",
         "Gameplay Ability System",
         "Replication Features",
-        "Gameplay Modes",
         "Item Spawning",
-        "Storm Systems",
         "EOS Multiplayer Integration"
 
     ],
@@ -114,7 +145,7 @@ links:
     image:"assets/images/runner.webp",
 
     description:
-    "Mobile runner title featuring backend progression systems and achievement integrations.",
+    "Shipped mobile endless runner developed by a three-person team. Contributed gameplay systems, progression systems, achievements, backend integrations, and performance-focused C++ refactors.",
 
     contributions:[
 

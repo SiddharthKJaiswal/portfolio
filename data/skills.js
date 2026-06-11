@@ -7,12 +7,12 @@ const skills = [
 
         "Gameplay Architecture",
         "Gameplay Ability System",
-        "State Tree",
         "Player Systems",
         "Camera Systems",
         "Save Systems",
         "Progression Systems",
-        "Data Driven Systems"
+        "Data Driven Systems",
+		"Gameplay Tool Development"
 
     ]
 },
