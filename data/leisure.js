@@ -78,7 +78,7 @@ const leisure = [
 {
     id:"deadrace",
 
-    title:"Dead Race",
+    title:"Shooter Race",
 
     role:"Personal Project",
 
@@ -114,6 +114,45 @@ const leisure = [
 		"Vehicle",
 		"Procedural Runtime Corridor" 
     ]
-}
+},
+
+{
+    id:"horrormaze",
+
+    title:"Horror Maze",
+
+    role:"Personal Project",
+
+	links:
+	[
+		{
+			label: "Github",
+			url: "https://github.com/SiddharthKJaiswal/Public_DungeonDefiler"
+		},
+	
+		{
+			label: "Gameplay",
+			url: "https://www.youtube.com/watch?v=GhcSFB0r_d4"
+		}
+	],
+    
+    image:"assets/images/horrormaze.png",
+
+    description:
+    "A simple Unreal Engine interview task. Developed in Unreal Engine 5 using C++ and Blueprints.",
+
+    contributions:[
+		"Collectables",
+		"Projectiles",
+		"Power-Ups",
+		"Sub-levels",
+		"C++ Interfaces"
+    ],
+
+    technologies:[
+        "Unreal Engine",
+		"C++",
+    ]
+},
 
 ];
