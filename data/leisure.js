@@ -91,7 +91,7 @@ const leisure = [
 	
 		{
 			label: "Gameplay",
-			url: "https://www.youtube.com/watch?v=PaigGEr6M-A"
+			url: "https://www.youtube.com/watch?v=QYcB-3zwvEA"
 		}
 	],
     
