@@ -23,7 +23,7 @@ const leisure = [
     image:"assets/images/cricket.png",
 
     description:
-    "A simple Unreal Engine interview task. Developed in Unreal Engine 5 using C++ and Blueprints.",
+    "Functionality Test, Developed in Unreal Engine 5 using C++ and Blueprints.",
 
     contributions:[
         "Physics Interactions",
@@ -59,7 +59,7 @@ const leisure = [
     image:"assets/images/ballhop.png",
 
     description:
-    "A simple Unreal Engine interview task. Developed in Unreal Engine 5 using Blueprints.",
+    "Functionality Test, Developed in Unreal Engine 5 using Blueprints.",
 
     contributions:[
 		"Physics Interaction",
@@ -98,7 +98,7 @@ const leisure = [
     image:"assets/images/deadrace.png",
 
     description:
-    "A simple Unreal Engine interview task. Developed in Unreal Engine 5 using Blueprints.",
+    "Functionality Test, Developed in Unreal Engine 5 using Blueprints.",
 
     contributions:[
 		"Chaos Vehicle",
@@ -139,7 +139,7 @@ const leisure = [
     image:"assets/images/horrormaze.png",
 
     description:
-    "A simple Unreal Engine interview task. Developed in Unreal Engine 5 using C++ and Blueprints.",
+    "Functionality Test, Developed in Unreal Engine 5 using C++ and Blueprints.",
 
     contributions:[
 		"Collectables",
