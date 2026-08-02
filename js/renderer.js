@@ -45,7 +45,10 @@ function renderProjects(containerId, dataArray, cardClass, contentClass) {
         </div>
         <div class="${contentClass}">
 		<h3>${item.title}</h3>
-		<p><strong>${item.role || ''}</strong> ${item.status ? `<span class="status-badge">${item.status}</span>` : ''}</p>
+		<div class="role-badge">
+			<strong>${item.role || ''}</strong>
+			${item.status ? `<span class="status-badge">${item.status}</span>` : ''}
+		</div>
 		<p>${item.description ? item.description.substring(0, 120) + (item.description.length > 120 ? '...' : '') : ''}</p>
 		</div>
         <div class="card-click-hint">⚔ Click for details</div>

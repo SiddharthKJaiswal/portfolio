@@ -342,18 +342,22 @@
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem 2.5rem;
+  flex-direction: column; /* 👈 Stack vertically on all screens */
+  align-items: center;
+  gap: 0.8rem;
 }
 .contact-card ul li {
   color: #b8a693;
+  font-size: 0.95rem;
+  word-break: break-word; /* 👈 Prevents long URLs from overflowing */
+  max-width: 100%;
 }
 .contact-card ul li a {
   color: #d4a373;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color var(--transition);
+  word-break: break-all; /* 👈 Forces long links to wrap */
 }
 .contact-card ul li a:hover {
   border-bottom-color: #a83232;
@@ -510,8 +514,20 @@
   padding: 0.15rem 0.8rem;
   border-radius: 30px;
   border: 1px solid #8a6d3b;
-  margin-left: 0.5rem;
   vertical-align: middle;
   font-weight: 600;
   letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+/* ----- Role + Badge container ----- */
+.role-badge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.role-badge strong {
+  color: #a83232;
+  font-weight: 600;
 }
