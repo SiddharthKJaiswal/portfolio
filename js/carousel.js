@@ -20,12 +20,19 @@ function buildCarouselHTML(item) {
     const displayStyle = isActive ? 'block' : 'none';
     const activeClass = isActive ? 'active-thumb' : '';
 
+    // Main slide
     mainHTML += `<div class="carousel-slide" style="display:${displayStyle}; width:100%; height:100%;">
       ${getMediaHTML(media)}
     </div>`;
 
-    const thumbSrc = media.type === 'video' ? 'assets/images/video-thumbnail-placeholder.png' : media.src;
-    thumbHTML += `<img src="${thumbSrc}" alt="Thumbnail ${index}" class="${activeClass}" data-index="${index}" onerror="this.src='assets/images/under-development.png'">`;
+    // Thumbnail generation
+    if (media.type === 'video') {
+      // Instead of looking for a missing PNG, we use a clean inline SVG play icon
+      const svgIcon = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4a373'%3E%3Cpolygon points='5,3 19,12 5,21'/%3E%3C/svg%3E`;
+      thumbHTML += `<img src="${svgIcon}" alt="Video ${index}" class="${activeClass}" data-index="${index}" style="background:#1a1410; padding: 8px; object-fit: contain;">`;
+    } else {
+      thumbHTML += `<img src="${media.src}" alt="Thumbnail ${index}" class="${activeClass}" data-index="${index}" onerror="this.src='assets/images/under-development.png'">`;
+    }
   });
 
   return {
