@@ -1,0 +1,108 @@
+/* ----- Header (Wooden Plank) ----- */
+header {
+  background: #1a1410;
+  border-bottom: 2px solid #3d2b1f;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #d4a373;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(212, 163, 115, 0.2);
+}
+nav a {
+  color: #b8a693;
+  text-decoration: none;
+  margin-left: 1.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color var(--transition), border-bottom var(--transition);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+nav a:hover {
+  color: #d4a373;
+  border-bottom-color: #a83232;
+}
+
+/* ----- Hero (Scroll/Parchment Style) ----- */
+.hero {
+  padding: 4rem 0 2rem;
+  border-bottom: 1px solid #3d2b1f;
+}
+.eyebrow {
+  color: #a83232;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 1rem 0 1.2rem;
+  color: #f0e6d3;
+}
+.hero p {
+  color: #b8a693;
+  max-width: 700px;
+  font-size: 1.1rem;
+}
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ----- Stats (Shield-like) ----- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0 4rem;
+}
+
+/* ----- Sections ----- */
+section {
+  margin: 4rem 0;
+}
+.section-header {
+  margin-bottom: 1.8rem;
+}
+.section-header h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #d4a373;
+  border-bottom: 2px solid #3d2b1f;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+.section-header p {
+  color: #8a7a6a;
+  margin-top: 0.3rem;
+}
+
+/* ----- Project Grids ----- */
+#projects-container,
+#published-container,
+#personal-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
